@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="Shortcut Icon" href="img/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>2019投資展望</title>
+    <meta property="og:title" content="2019投資展望" />
+    <meta property="og:description" content="2019投資展望" />
+
+    <!-- 分享小圖 -->
+    <!-- <meta
+      itemprop="image"
+      property="og:image"
+      content="https://event.businesstoday.com.tw/banner/1200x627_04_dog.jpg"
+    /> -->
+
+    <!-- 正式連結 -->
+    <!-- <meta
+      property="og:url"
+      content="https://event.businesstoday.com.tw/2018/2018CloudGateProject/04_dog.html"
+    /> -->
+
+    <meta property="og:type" content="website" />
+
+    <style>
+        body {
+            margin: 0px;
+            background-image: url(img/risk/bulletin_board-page.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #risk-title img {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        #risk-poster img {
+            width: 300px;
+        }
+
+        #risk-poster {
+            /* cursor: crosshair; */
+            padding-left: 20vw;
+        }
+
+        /* #aim{
+            position:absolute;
+            width: 200px;
+        } */
+
+        /* 點擊海報滑鼠鼠標變十字 */
+        .poster {
+            cursor: crosshair;
+        }
+
+        /* 海報:float: left */
+        .risk-poster-pos {
+            /* display: inline-block; */
+            float: left;
+            /* padding-right: 4vw; */
+        }
+
+        /* 海報錯落位置 */
+        .risk-pos1 {
+            padding-top: 10vh;
+        }
+        .risk-pos2 {
+            padding-top: 20vh;
+        }
+        .risk-pos4 {
+            padding-top: 30vh;
+        }
+        .risk-pos6 {
+            padding-bottom: 30vh;
+        }
+
+        /* 海報旋轉角度 */
+        #posterAg-10 {
+            transform: rotate(-10deg);
+        }
+        #posterAg5 {
+            transform: rotate(5deg);
+        }
+        #posterAg12 {
+            transform: rotate(12deg);
+        }
+        #posterAg15 {
+            transform: rotate(15deg);
+        }  
+        
+        .hole {
+            position: absolute;
+            z-index: 2;
+            display: none;
+        }
+        .popUpAll {
+            position: absolute;
+            z-index: 3;
+            background-color: rebeccapurple;
+
+            width: 20vw;
+            height: 15vh;
+
+            margin-left: 6vw;
+            margin-top: -20vh;
+            margin-bottom: 0px;
+            display: none;
+            transition: width 1s, height 1s;
+        }    
+        .popUpAll:hover {
+            width: 50vw;
+            height: 25vh;
+        }
+
+
+        /* 彈跳視窗 The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 4; /* Sit on top */
+            padding-top: 40vh; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #293f66;
+            margin: auto;
+            padding: 20px;
+            /* border: 1px solid #888; */
+            width: 40%;
+            color: white;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    /* End */        
+
+    </style>
+
+  </head>
+  
+  
+  <body>
+    <div id="risk-title">
+        <img src="img/risk/risk-title2.png">
+    </div>
+
+    <!-- <img id="aim" src="img/risk/aim.png"/> -->
+
+
+    <!-- 上區 -->
+    <div id="risk-poster">
+        <div class="risk-poster-pos risk-pos1" id="myBtn">
+            <img src="img/risk/shooting_hole.png" class="hole">
+            <img src="img/risk/risk1-poster.png" id="posterAg15" class="poster">
+            
+            <!-- 彈跳視窗Trigger/Open The Modal -->
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+            </div> 
+             <!-- End-->           
+            
+        </div>         
+
+        <div class="risk-poster-pos risk-pos2 posterAll">
+            <img src="img/risk/risk2-poster.png" id="posterAg-10" class="poster">
+        </div>
+
+        <div class="risk-poster-pos">
+            <img src="img/risk/risk3-poster.png" id="posterAg5" class="poster" >
+        </div>
+        
+        <div class="risk-poster-pos risk-pos4">
+            <img src="img/risk/risk4-poster.png" id="posterAg12" class="poster">
+        </div>
+
+        <div class="risk-poster-pos">
+            <img src="img/risk/risk5-poster.png" id="posterAg-10" class="poster">
+        </div>
+    </div>
+
+
+    <!-- 下區 -->
+    <div id="risk-poster" style="clear: both;">
+            <div class="risk-poster-pos risk-pos1">
+                <img src="img/risk/risk6-poster.png" id="posterAg5">
+            </div>         
+
+            <div class="risk-poster-pos risk-pos2">
+                <img src="img/risk/risk7-poster.png" id="posterAg-10">
+            </div>
+    
+            <div class="risk-poster-pos">
+                <img src="img/risk/risk8-poster.png" id="posterAg12">
+            </div>
+    
+            <div class="risk-poster-pos risk-pos2">
+                <img src="img/risk/risk9-poster.png" id="posterAg-10">
+            </div>
+    
+            <div class="risk-poster-pos">
+                <img src="img/risk/risk10-poster.png" id="posterAg5">
+            </div>
+        </div>    
+
+    <script type="text/javascript">
+
+        // 滑鼠對準
+        // $(document).mousemove(function(e){
+        //     $("#aim").css({left:e.pageX-100, top:e.pageY-100});
+        // });
+
+        // function myFunction() {
+        //     var popup = document.getElementById("myPopup");
+        //     popup.classList.toggle("show");
+        // }
+
+
+        // 彈跳視窗Trigger/Open The Modal
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var closeBtn = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+       
+
+            // When the user clicks on <span> (x), close the modal
+                closeBtn.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        // End   
+
+
+
+        // 點擊圖片開槍+彈跳視窗圖
+        var poster = document.querySelectorAll('.poster');
+
+        for( var i = 0; i<poster.length; i++){
+
+            function shootFunc(){
+                document.querySelector('.hole').style.display = 'block';
+                // document.querySelector('.popUp1').style.display = 'block';
+                // alert(22);
+            }
+
+            poster[i].addEventListener('click', shootFunc);
+        }
+
+    </script>
+  </body>
+</html>
